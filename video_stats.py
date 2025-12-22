@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path="E:\github\ELT_Tutorial\.env")
 
 API_KEY = os.getenv("API_KEY")
-CHANNEL_HANDLE = "MrBeast"
+CHANNEL_HANDLE = os.getenv("CHANNEL_HANDLE")
 max_results = 50
 
 
