@@ -74,7 +74,7 @@ def update_rows(cur, conn, schema, row):
         logger.error(f"Error updating row with Video_ID: {row[video_id]}")
         raise
 
-def delete_row(cur, conn, schema, ids_to_delete):
+def delete_rows(cur, conn, schema, ids_to_delete):
     try:
         ids_to_delete = f"""({',   '.join(f"'{id}'" for id in ids_to_delete)})"""
 
